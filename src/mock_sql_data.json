@@ -1,0 +1,67 @@
+[
+    {
+      "client_id": "101",
+      "client_name": "MegaBev Corp",
+      "industry": "FMCG",
+      "total_spend_ytd": 450000,
+      "last_meeting_date": "2024-12-15",
+      "account_manager": "Burak"
+    },
+    {
+      "client_id": "102",
+      "client_name": "TechGiant",
+      "industry": "Electronics",
+      "total_spend_ytd": 120000,
+      "last_meeting_date": "2024-11-20",
+      "account_manager": "Elif"
+    },
+    {
+      "client_id": "103",
+      "client_name": "FreshMart",
+      "industry": "FMCG",
+      "total_spend_ytd": 98000,
+      "last_meeting_date": "2024-10-05",
+      "account_manager": "Deniz"
+    },
+    {
+      "client_id": "104",
+      "client_name": "AutoDrive",
+      "industry": "Automotive",
+      "total_spend_ytd": 210000,
+      "last_meeting_date": "2024-12-02",
+      "account_manager": "Beliz"
+    },
+    {
+      "client_id": "105",
+      "client_name": "HealthPlus",
+      "industry": "Healthcare",
+      "total_spend_ytd": 145000,
+      "last_meeting_date": "2024-09-18",
+      "account_manager": "Yiğit"
+    },
+    {
+      "client_id": "106",
+      "client_name": "UrbanStyle",
+      "industry": "Retail",
+      "total_spend_ytd": 155000,
+      "last_meeting_date": "2024-12-10",
+      "account_manager": "Zeynep"
+    },
+    {
+      "client_id": "107",
+      "client_name": "FinTrust",
+      "industry": "Finance",
+      "total_spend_ytd": 320000,
+      "last_meeting_date": "2024-08-30",
+      "account_manager": "Kenan"
+    },
+    {
+      "client_id": "108",
+      "client_name": "EduNext",
+      "industry": "Education",
+      "total_spend_ytd": 60000,
+      "last_meeting_date": "2024-07-12",
+      "account_manager": "Emine"
+    }
+  ]
+  

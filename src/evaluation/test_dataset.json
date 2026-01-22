@@ -1,0 +1,50 @@
+[
+    {
+        "question": "How much has TechGiant spent so far?",
+        "ground_truth": "TechGiant has spent $120,000 YTD.",
+        "expected_tools": ["search_structured_db"],
+        "expected_contexts": [
+            "TechGiant, Electronics, 120000"
+        ]
+    },
+    {
+        "question": "What is our policy on discussing 2026 pricing?",
+        "ground_truth": "You should not discuss 2026 Q3 pricing until official approval is granted by the Finance Head.",
+        "expected_tools": ["search_semantic_db"],
+        "expected_contexts": [
+            "Never discuss '2026 Q3 Pricing' until official approval is granted by the Finance Head."
+        ]
+    },
+    {
+        "question": "I have a meeting with TechGiant. Based on their spending and industry, what product should I pitch?",
+        "ground_truth": "For TechGiant (Electronics, $120k spend), recommend Mobile App Banners and Online Display Ads as they are below the 150k threshold for premium video ads.",
+        "expected_tools": ["search_structured_db", "search_semantic_db"],
+        "expected_contexts": [
+            "TechGiant, Electronics, 120000",
+            "If a client's total YTD spend is below 150k, do not push for premium video ads. Instead, focus strictly on up-selling 'Mobile App Banners'."
+        ]
+    },
+    {
+        "question": "Who is the account manager for TechGiant?",
+        "ground_truth": "The account manager for TechGiant is Elif.",
+        "expected_tools": ["search_structured_db"],
+        "expected_contexts": [
+            "TechGiant, account_manager: Elif"
+        ]
+    },
+    {
+        "question": "What products should I recommend for a client spending $80,000?",
+        "ground_truth": "For clients spending below $150k, focus on Mobile App Banners and avoid premium video ads.",
+        "expected_tools": ["search_semantic_db"],
+        "expected_contexts": [
+            "If a client's total YTD spend is below 150k, do not push for premium video ads. Instead, focus strictly on up-selling 'Mobile App Banners'."
+        ]
+    },
+    {
+        "question": "What's the weather today?",
+        "ground_truth": "I'm a sales assistant and can only help with sales-related questions.",
+        "expected_tools": [],
+        "expected_contexts": [],
+        "is_irrelevant": true
+    }
+]

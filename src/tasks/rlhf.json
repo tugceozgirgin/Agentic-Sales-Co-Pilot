@@ -1,0 +1,142 @@
+[
+    {
+        "user_input": "How much has TechGiant spent so far?",
+        "crm_output": "TechGiant has a total YTD spend of $120,000.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db to retrieve client spending facts.",
+        "correctness": true
+    },
+    {
+        "user_input": "What is our policy on discussing 2026 pricing?",
+        "crm_output": "According to our sales policy, you should not discuss future pricing until officially released. Refer clients to current published rates.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db to retrieve pricing policy.",
+        "correctness": true
+    },
+    {
+        "user_input": "I have a meeting with TechGiant. Based on their spending and industry, what product should I pitch?",
+        "crm_output": "For TechGiant (Electronics, $120k spend), I recommend Mobile App Banners and Online Display Ads as performance-first products suitable for their profile.",
+        "tool_calls_made": ["search_structured_db", "search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used both tools for a recommendation query.",
+        "correctness": true
+    },
+    {
+        "user_input": "Who is the account manager for GlobalRetail?",
+        "crm_output": "The account manager for GlobalRetail is Sarah.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db to retrieve account manager info.",
+        "correctness": true
+    },
+    {
+        "user_input": "What are the discount rules for high-spend clients?",
+        "crm_output": "For clients spending above $200k YTD, you may offer up to 15% volume discount. For clients above $500k, escalate to sales director for custom pricing.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db to retrieve discount policies.",
+        "correctness": true
+    },
+    {
+        "user_input": "Can you recommend products for MegaCorp based on their industry?",
+        "crm_output": "For MegaCorp (Finance industry, $85k spend), I recommend focusing on Native Content Ads and Sponsored Articles which perform well in Finance sector while respecting their spend tier.",
+        "tool_calls_made": ["search_structured_db", "search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used both tools for industry-based recommendation.",
+        "correctness": true
+    },
+    {
+        "user_input": "What's the weather like today?",
+        "crm_output": "I'm a sales assistant and can only help with sales-related questions. Please ask about clients, products, or sales policies.",
+        "tool_calls_made": [],
+        "reflection_output": "CRM Agent correctly identified irrelevant query and declined to answer.",
+        "correctness": true
+    },
+    {
+        "user_input": "When was my last meeting with TechGiant?",
+        "crm_output": "Your last meeting with TechGiant was on 2024-11-20.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db to retrieve meeting date.",
+        "correctness": true
+    },
+    {
+        "user_input": "What products should I pitch to a low-spend client in Healthcare?",
+        "crm_output": "For low-spend Healthcare clients, focus on cost-effective options like Email Campaigns and Basic Display Ads. Avoid premium video formats until spending increases.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent used search_semantic_db for policy, but should have asked for specific client name to get exact spend data.",
+        "correctness": false
+    },
+    {
+        "user_input": "Tell me about StartupXYZ's spending history",
+        "crm_output": "StartupXYZ has a total YTD spend of $45,000. They are in the Technology industry.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db for client facts.",
+        "correctness": true
+    },
+    {
+        "user_input": "What's the commission structure for new sales?",
+        "crm_output": "Standard commission is 8% on new business, 5% on renewals. Accelerators apply for deals over $100k.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db for commission policy.",
+        "correctness": true
+    },
+    {
+        "user_input": "Should I offer premium video ads to a client spending $80k?",
+        "crm_output": "For clients spending below $150k, premium video ads are not recommended per our spend-based guidelines. Focus on standard display and native formats.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db for spend-based policy.",
+        "correctness": true
+    },
+    {
+        "user_input": "I need a product recommendation for RetailMax",
+        "crm_output": "Based on RetailMax's profile (Retail industry, $200k spend), I recommend Sponsored Product Listings and Retargeting Campaigns which align with retail best practices and their spend tier.",
+        "tool_calls_made": ["search_structured_db", "search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used both tools for recommendation.",
+        "correctness": true
+    },
+    {
+        "user_input": "What industry is AutoDrive in?",
+        "crm_output": "AutoDrive is in the Automotive industry.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db for client industry.",
+        "correctness": true
+    },
+    {
+        "user_input": "Can you help me write an email to my boss?",
+        "crm_output": "I'm a sales assistant focused on CRM data and sales policies. I cannot help with general email writing. Please ask about clients or sales guidelines.",
+        "tool_calls_made": [],
+        "reflection_output": "CRM Agent correctly identified irrelevant query.",
+        "correctness": true
+    },
+    {
+        "user_input": "What are the rules for offering free trials?",
+        "crm_output": "Free trials up to 30 days are allowed for new clients. Existing clients may receive 14-day trials on new products. Director approval needed for extended trials.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db for trial policy.",
+        "correctness": true
+    },
+    {
+        "user_input": "Give me a pitch for MediaGroup considering their budget",
+        "crm_output": "For MediaGroup, I recommend focusing on Video Pre-roll Ads and Connected TV placements given their media industry focus and strong spending history.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent only used search_semantic_db but should have used search_structured_db first to get actual client spending data.",
+        "correctness": false
+    },
+    {
+        "user_input": "List all clients managed by John",
+        "crm_output": "I found the following clients managed by John: TechGiant, StartupXYZ, and DataCorp.",
+        "tool_calls_made": ["search_structured_db"],
+        "reflection_output": "CRM Agent correctly used search_structured_db to find clients by account manager.",
+        "correctness": true
+    },
+    {
+        "user_input": "What's the escalation process for unhappy clients?",
+        "crm_output": "For client complaints: 1) Acknowledge within 24 hours, 2) Escalate to manager if unresolved in 48 hours, 3) Director involvement for accounts over $100k.",
+        "tool_calls_made": ["search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used search_semantic_db for escalation policy.",
+        "correctness": true
+    },
+    {
+        "user_input": "Should I pitch premium products to HealthCo given their spend?",
+        "crm_output": "HealthCo has a YTD spend of $180k. Based on our spend guidelines, they qualify for premium product offerings. For Healthcare, I recommend Premium Health Display Network and Verified Medical Publisher Ads.",
+        "tool_calls_made": ["search_structured_db", "search_semantic_db"],
+        "reflection_output": "CRM Agent correctly used both tools and properly applied spend-based rules before industry preferences.",
+        "correctness": true
+    }
+]
