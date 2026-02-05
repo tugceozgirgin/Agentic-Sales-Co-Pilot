@@ -589,11 +589,6 @@ RAGAS provides:
 - [RAGAS Documentation](https://docs.ragas.io/)
 - [TRL (RLHF) Documentation](https://huggingface.co/docs/trl/)
 
-## 📄 License
-
-[Add your license here]
-
-## 🤝 Contributing
 
 [Add contribution guidelines here]
 
