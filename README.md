@@ -80,30 +80,7 @@ python -m src.evaluation.evaluate_rag --model gpt-4o-mini
 python -m src.tasks.rlhf --epochs 3 --lr 1e-5
 ```
 
-### 1. Installation
-
-```bash
-# Clone the repository
-cd CaseStudy
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install pip-tools for dependency management
-pip install pip-tools
-
-# Compile requirements from requirements.in
-pip-compile requirements.in -o requirements.txt
-
-# Install all dependencies
-pip install -r requirements.txt
-
-# Install evaluation dependencies
-pip install -r requirements_eval.txt
-```
-
-### 2. Environment Setup
+### Environment Setup
 
 Create a `.env` file in the project root:
 
@@ -588,15 +565,3 @@ RAGAS provides:
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [RAGAS Documentation](https://docs.ragas.io/)
 - [TRL (RLHF) Documentation](https://huggingface.co/docs/trl/)
-
-## 📄 License
-
-[Add your license here]
-
-## 🤝 Contributing
-
-[Add contribution guidelines here]
-
-## 📧 Contact
-
-[Add contact information here]
