@@ -12,8 +12,8 @@ from pydantic import ValidationError
 class ReflectionAgent(BaseAgent):
     def __init__(self, name: str, tools: list, model_name: str = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"):
         super().__init__(name, tools, model_name)
-        #self.llm = Models.get_openai_model("gpt-4o-mini", temperature=0.0)
-        self.llm = Models.get_vicuna_model(model_name, temperature=0.0)
+        self.llm = Models.get_openai_model("gpt-4o-mini", temperature=0.0)
+        #self.llm = Models.get_vicuna_model(model_name, temperature=0.0)
 
     def forward(self, state: MainState) -> MainState:
         reflection_count = state.get("reflection_count", 0) + 1
